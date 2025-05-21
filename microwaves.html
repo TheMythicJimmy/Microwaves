@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Boxes</title>
+  <style>
+    body {
+      background-color: #800020; /* Burgundy */
+      color: red;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .box {
+      background-color: #000;
+      border: 1px solid #444;
+      width: 300px;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .box img {
+      max-width: 100%;
+    }
+
+    .box-title {
+      margin-top: 10px;
+      font-size: 1.2em;
+    }
+
+    .box-title a {
+      color: red;
+      text-decoration: none;
+    }
+
+    .box-title a:hover {
+      text-decoration: underline;
+      color: #ff4d4d;
+    }
+
+    .description {
+      margin-top: 5px;
+      font-size: 0.95em;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 style="text-align:center;">Microwaves</h1>
+  <div class="container">
+    <div class="box">
+      <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/8ad015ed-3cc8-4a15-becb-5b2ca6b8a6b1.jpg;maxHeight=1080;maxWidth=900?format=webp" alt="GE">
+      <div class="box-title"><a href="https://www.geaerospace.com/">GE Microwave</a></div>
+      <div class="description">The GE microwave is fairly cheap and has a classic simple look to it so you can't really go wrong with it.</div>
+    </div>
+    <div class="box">
+      <img src="https://i.imgur.com/VWcbpY9.png" alt="Samsung">
+      <div class="box-title"><a href="https://www.samsung.com/">Samsung Microwave</a></div>
+      <div class="description">The Samsung microwave comes in at a pretty hefty price but offers a sleek modern look that will only fit in certain households.</div>
+    </div>
+    <div class="box">
+      <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6508/6508563_sd.jpg;maxHeight=1080;maxWidth=900?format=webp" alt="LG">
+      <div class="box-title"><a href="https://www.lg.com/">LG Microwave</a></div>
+      <div class="description">This microwave, like the last, is pretty expensive and offers a wide array of features such as compatibility with smart assistants. It also has a modern look to it but it is cheaper than the Samsung.</div>
+    </div>
+    <div class="box">
+      <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6362/6362518_sd.jpg;maxHeight=1080;maxWidth=900?format=webp" alt="Breville">
+      <div class="box-title"><a href="https://www.williams-sonoma.com/">Breville Microwave</a></div>
+      <div class="description">This microwave has a more rounded look to appeal to those who wish to return to simpler times when microwaves were just meant to heat up food. 3rd cheapest microwave on this list.</div>
+    </div>
+    <div class="box">
+      <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/151d3eb2-3df8-455e-9906-b3d419a6f81b.jpg;maxHeight=1080;maxWidth=900?format=webp" alt="Insignia">
+      <div class="box-title"><a href="https://insignia-usa.com/">Insignia Microwave</a></div>
+      <div class="description">This is the cheapest microwave on the list but it probably gets the job done. This is probably a microwave that they would use in a rage room or for stupid science experiments. Either way I wouldn't recommend this microwave to anyone unless they are on a budget.</div>
+    </div>
+<div style="text-align:center; margin-bottom: 30px;">
+  <form>
+    <p style="color:red;">Favorite Microwave?</p>
+    <label style="display: inline-block; width: 100px; text-align: left;">
+      <input type="radio" name="microwave" value="GE"> GE
+    </label><br>
+    <label style="display: inline-block; width: 100px; text-align: left;">
+      <input type="radio" name="microwave" value="Samsung"> Samsung
+    </label><br>
+    <label style="display: inline-block; width: 100px; text-align: left;">
+      <input type="radio" name="microwave" value="LG"> LG
+    </label><br>
+    <label style="display: inline-block; width: 100px; text-align: left;">
+      <input type="radio" name="microwave" value="Breville"> Breville
+    </label><br>
+    <label style="display: inline-block; width: 100px; text-align: left;">
+      <input type="radio" name="microwave" value="Insignia"> Insignia
+    </label>
+  </form>
+</div>
+
+</body>
+</html>
